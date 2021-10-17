@@ -14,6 +14,9 @@ def parse_sym_links_config(symlinksfile: str):
 
 
 def makelink(override: bool, origin: str, destination: str):
+    if os.path.exists(destination) and override is False:
+        return
+
     if os.path.exists(destination) and override:
         os.remove(destination)
 
