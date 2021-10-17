@@ -21,4 +21,14 @@ then
     echo 'source ${DOTFILES_DIRECTORY}/dotfiles.sh' >> $HOME/.bashrc
 fi
 
+which python3
+
+if [[ $? > 0 ]]
+then
+  echo "Se necesita Python 3.9 o mayor para continuar"
+fi
+
+pip3 install -r ${DOTFILES_DIRECTORY}/scripts/requirements.txt
+python3 ${DOTFILES_DIRECTORY}/scripts/symlinks.py
+
 echo "Para aplicar los cambios reinicia la terminal"

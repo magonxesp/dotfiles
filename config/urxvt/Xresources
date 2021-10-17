@@ -3,6 +3,7 @@
 *.foreground:   #c7ccd1
 *.background:   #1c2023
 *.cursorColor:  #c7ccd1
+*.borderColor:  #1c2023
 
 ! black
 *.color0:       #1c2023
@@ -44,8 +45,8 @@ URxvt.font: xft:ubuntu mono:size=13:style=medium:antialias=true
 !!URxvt.boldItalicfont: xft:ubuntu mono:size=13:style=medium:antialias=true
 URxvt.letterSpace: 0
 URxvt.lineSpace: 0
-URxvt.geometry: 92x24
-URxvt.internalBorder: 24
+URxvt.geometry: 80x24
+URxvt.internalBorder: 0
 URxvt.cursorBlink: true
 URxvt.cursorUnderline: false
 URxvt.saveline: 2048
@@ -79,4 +80,5 @@ URxvt.urlButton: 1
 
 !! Changing icon to gnome-terminal
 URxvt*iconFile: /usr/share/icons/Tango/32x32/apps/gnome-terminal.png
-
+! change to dark gray background
+URxvt.keysym.C-9: command:\033]11;#777777\007
