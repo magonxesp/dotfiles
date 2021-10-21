@@ -22,7 +22,9 @@ case $1 in
         echo ""
         echo "COMANDOS:"
         echo "  reload-symlinks Actualiza los enlaces simbolicos de los dotfiles"
+        echo ""
         echo "  kitty-colors [fichero] Transforma un fichero exportado de terminal.sexy en formato JSON a el formato de la configuración de kitty"
+        echo ""
         echo "  install-scripts-depencencies Instala las dependecias de los scripts de python"
     ;;    
     *)
