@@ -8,7 +8,7 @@ case $1 in
         python3 $DOTFILES_ROOT_DIRECTORY/share/scripts/kittycolors.py ${@:2}
     ;;
     "install-scripts-depencencies")
-        pip3 -r $DOTFILES_ROOT_DIRECTORY/share/scripts/requirements.txt
+        pip3 install -r $DOTFILES_ROOT_DIRECTORY/share/scripts/requirements.txt
     ;;    
     "-h")
         echo "Dotfiles"
