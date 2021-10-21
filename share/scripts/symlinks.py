@@ -15,8 +15,7 @@ def parse_sym_links_config(symlinksfile: str):
 
 def makelink(override: bool, origin: str, destination: str):
     if os.path.exists(origin) is False:
-        print("The file", origin, "cannot be linked because doesn't exists!")
-        exit(1)
+        raise Exception("The file {} cannot be linked because doesn't exists!".format(origin))
 
     if os.path.exists(destination) and override is False:
         return
@@ -64,4 +63,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        print(str(e))
+        exit(1)
