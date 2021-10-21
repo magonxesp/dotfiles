@@ -14,11 +14,18 @@ def parse_sym_links_config(symlinksfile: str):
 
 
 def makelink(override: bool, origin: str, destination: str):
+    if os.path.exists(origin) is False:
+        print("The file", origin, "cannot be linked because doesn't exists!")
+        exit(1)
+
     if os.path.exists(destination) and override is False:
         return
 
-    if os.path.exists(destination) and override:
+    if os.path.isfile(destination) and override:
         os.remove(destination)
+    
+    if os.path.islink(destination) and override:
+        os.unlink(destination)
 
     link_directory = os.path.dirname(destination)
 
@@ -39,12 +46,16 @@ def makelinks(override: bool, links: List[str]):
 
 
 def main():
-    dotfiles_directory = os.getenv('DOTFILES_DIRECTORY')
-
+    dotfiles_directory = os.getenv('DOTFILES_DIRECTORY')   
+    
     if dotfiles_directory is None:
         raise Exception("The environment variable DOTFILES_DIRECTORY does not exists")
+    
+    symlinks_config_file = os.path.join(dotfiles_directory, "symlinks", "config.symlinks.yml")
 
-    config = parse_sym_links_config(os.path.join(dotfiles_directory, "symlinks.yml"))
+    print("Applying symliks from", symlinks_config_file)
+
+    config = parse_sym_links_config(symlinks_config_file)
 
     if config is None:
         raise Exception("Symlinks not found")
