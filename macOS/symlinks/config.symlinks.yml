@@ -10,3 +10,6 @@ symlinks:
     # Neofetch
     - ~/.config/neofetch/config.conf:~/dotfiles/macOS/config/neofetch/config.conf
 
+    # iTerm2
+    - ~/.config/iterm2/com.googlecode.iterm2.plist:~/dotfiles/macOS/config/iterm2/com.googlecode.iterm2.plist
+
