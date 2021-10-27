@@ -8,7 +8,7 @@ symlinks:
     - ~/.config/kitty/kitty.conf:~/dotfiles/share/config/kitty/kitty.conf
 
     # Neofetch
-    - ~/.config/neofetch/config.conf:~/dotfiles/macOS/config/neofetch/config.conf
+    - ~/.config/neofetch/config.conf:~/dotfiles/share/config/neofetch/config.conf
 
     # iTerm2
     - ~/.config/iterm2/com.googlecode.iterm2.plist:~/dotfiles/macOS/config/iterm2/com.googlecode.iterm2.plist

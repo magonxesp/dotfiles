@@ -8,7 +8,7 @@ symlinks:
     - ~/.config/kitty/kitty.conf:~/dotfiles/share/config/kitty/kitty.conf
 
     # Neofetch
-    - ~/.config/neofetch/config.conf:~/dotfiles/linux/config/neofetch/config.conf
+    - ~/.config/neofetch/config.conf:~/dotfiles/share/config/neofetch/config.conf
 
     # Urxvt terminal
     - ~/.Xresources:~/dotfiles/linux/config/urxvt/Xresources
