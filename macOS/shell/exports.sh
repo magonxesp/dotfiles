@@ -10,3 +10,9 @@ export NVM_DIR="$HOME/.nvm"
 if [[ -d "/usr/local/opt/php@7.4/bin" ]]; then
     export PATH="/usr/local/opt/php@7.4/bin:$PATH"
 fi
+
+if [[ "$TERM" == "xterm-kitty" ]]; then
+    export NEOFETCH_IMAGE_BACKEND="kitty"
+else
+    export NEOFETCH_IMAGE_BACKEND="iterm2"
+fi
