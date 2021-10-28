@@ -13,9 +13,10 @@ Tanto para macOS y linux:
 * ✅ [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
 * ✅ [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh/wiki)
 * ✅ [neofetch](https://github.com/dylanaraps/neofetch)
+* ✅ [powerline fonts](https://github.com/powerline/fonts)
+* ✅ [imagemagick](https://imagemagick.org/script/download.php)
 
 Solo en linux:
-* ✅ [imagemagick](https://imagemagick.org/script/download.php)
 * ✅ [rofi](https://github.com/davatorium/rofi)
 * ✅ [kitty](https://github.com/kovidgoyal/kitty)
 
