@@ -15,6 +15,7 @@ Tanto para macOS y linux:
 * ✅ [neofetch](https://github.com/dylanaraps/neofetch)
 
 Solo en linux:
+* ✅ [imagemagick](https://imagemagick.org/script/download.php)
 * ✅ [rofi](https://github.com/davatorium/rofi)
 * ✅ [kitty](https://github.com/kovidgoyal/kitty)
 
