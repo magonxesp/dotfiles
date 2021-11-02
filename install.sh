@@ -63,7 +63,7 @@ source ${DOTFILES_ROOT_DIRECTORY}/init.sh
 
 which python3
 
-if [[ $? > 0 ]]
+if [[ $? -gt 0 ]]
 then
   echo "Se necesita Python 3.9 o mayor para continuar"
 fi
@@ -71,7 +71,7 @@ fi
 pip3 install -r ${DOTFILES_ROOT_DIRECTORY}/share/scripts/requirements.txt
 python3 ${DOTFILES_ROOT_DIRECTORY}/share/scripts/symlinks.py
 
-if [[ $? > 0 ]]
+if [[ $? -gt 0 ]]
 then
     echo "No se ha podido crear los enlaces simbolicos debido a un error!"
     exit 1
