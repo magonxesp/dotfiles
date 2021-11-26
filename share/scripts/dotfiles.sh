@@ -14,6 +14,9 @@ case $1 in
     "install-scripts-depencencies")
         pip3 install -r $DOTFILES_ROOT_DIRECTORY/share/scripts/requirements.txt
     ;;
+    "os"*)
+        ${DOTFILES_DIRECTORY}/scripts/commands.sh ${@:2}
+    ;;
     "-h")
         echo "Dotfiles"
         echo ""
@@ -32,6 +35,8 @@ case $1 in
         echo "  kitty-colors [fichero]  Transforma un fichero exportado de terminal.sexy en formato JSON a el formato de la configuración de kitty"
         echo ""
         echo "  install-scripts-depencencies  Instala las dependecias de los scripts de python"
+        echo ""
+        echo "  os [comando]  Ejecuta un comando diseñado especificamente para el sistema operativo que se esta usando"
     ;;    
     *)
         echo "El comando $1 no existe, usa la opcion -h para la ayuda"

@@ -1,0 +1,8 @@
+keybindings:
+  - name: "rofi dmenu"
+    command: "rofi -show drun"
+    binding: "<Primary><Alt>space"
+  
+  - name: "kitty"
+    command: "kitty"
+    binding: "<Super>t" 
