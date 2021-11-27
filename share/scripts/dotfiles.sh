@@ -15,7 +15,9 @@ case $1 in
         pip3 install -r $DOTFILES_ROOT_DIRECTORY/share/scripts/requirements.txt
     ;;
     "os"*)
-        ${DOTFILES_DIRECTORY}/scripts/commands.sh ${@:2}
+        if [[ -f ${DOTFILES_DIRECTORY}/scripts/commands.sh ]]; then
+            ${DOTFILES_DIRECTORY}/scripts/commands.sh ${@:2}
+        fi
     ;;
     "-h")
         echo "Dotfiles"
