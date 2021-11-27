@@ -18,8 +18,9 @@ apt install -y \
   neofetch \
   htop \
   nodejs \
-  npm
-
+  npm \
+  grub-customizer \
+  vim
 
 # setup docker
 echo "Instalando docker..."
