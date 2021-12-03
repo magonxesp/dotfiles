@@ -12,10 +12,6 @@ if [[ -d "/media/magonxesp/DATA/repos" ]]; then
   alias repos="cd /media/magonxesp/DATA/repos"
 fi
 
-if [[ -d "$HOME/basetis" ]]; then
-  alias basetis="cd $HOME/basetis"
-fi
-
 # alias for permissions
 alias own="sudo chown $USER:$USER"
 alias ownr="sudo chown -R $USER:$USER"
