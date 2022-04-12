@@ -13,3 +13,6 @@ symlinks:
     # iTerm2
     - ~/.config/iterm2/com.googlecode.iterm2.plist:~/dotfiles/macOS/config/iterm2/com.googlecode.iterm2.plist
 
+    # Window manager y atajos de teclado
+    - ~/.config/yabai/yabairc:~/dotfiles/macOS/config/yabai/yabairc
+    - ~/.config/skhd/skhdrc:~/dotfiles/macOS/config/skhd/skhdrc
