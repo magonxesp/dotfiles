@@ -6,10 +6,7 @@ apt update
 echo "Instalando paquetes..."
 apt install -y \
   curl \
-  flatpak \
-  gnome-software \
-  gnome-software-plugin-flatpak \
-  gnome-tweaks \
+  python3 \
   python3-pip \
   imagemagick \
   kitty \
@@ -19,7 +16,6 @@ apt install -y \
   htop \
   nodejs \
   npm \
-  grub-customizer \
   vim
 
 # setup docker
@@ -52,11 +48,6 @@ apt-get update
 apt-get install -y papirus-icon-theme
 
 echo "Instalando paquetes extra..."
-# lutris
-add-apt-repository ppa:lutris-team/lutris -y
-apt update
-apt install -y lutris
-
 # neovim
 apt-add-repository ppa:neovim-ppa/stable -y
 apt update
