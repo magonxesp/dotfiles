@@ -3,7 +3,7 @@
 sudo apt update
 
 # setup packages
-echo "Instalando paquetes..."
+echo "Instalando paquetes necesarios..."
 sudo apt install -y \
   curl \
   python3 \
@@ -16,7 +16,13 @@ sudo apt install -y \
   htop \
   nodejs \
   npm \
-  vim
+  vim \
+  fonts-font-awesome \
+  bspwm \
+  polybar
+
+
+echo "Instalando paquetes extra..."
 
 # setup docker
 echo "Instalando docker..."
