@@ -14,4 +14,12 @@ symlinks:
     - ~/.Xresources:~/dotfiles/linux/config/urxvt/Xresources
 
     # Rofi
-    - ~/.config/rofi/config:~/dotfiles/linux/config/rofi/config
+    - ~/.config/rofi/config.rasi:~/dotfiles/linux/config/rofi/config.rasi
+    - ~/.config/rofi/slate.rasi:~/dotfiles/linux/config/rofi/themes/slate.rasi
+
+    # WM config
+    - ~/.config/bspwm/bspwmrc:~/dotfiles/linux/config/bspwm/bspwmrc
+    - ~/.config/bspwm/wallpaper.png:~/dotfiles/linux/config/bspwm/wallpaper.png
+    - ~/.config/sxhkd/sxhkdrc:~/dotfiles/linux/config/sxhkd/sxhkdrc
+    - ~/.config/polybar/config:~/dotfiles/linux/config/polybar/config
+    - ~/.config/polybar/launch.sh:~/dotfiles/linux/config/polybar/launch.sh
