@@ -19,7 +19,7 @@ sudo apt install -y \
   vim \
   fonts-font-awesome \
   bspwm \
-  polybar
+  xfce4-desktop
 
 
 echo "Instalando paquetes extra..."
