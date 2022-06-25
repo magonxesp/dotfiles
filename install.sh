@@ -1,22 +1,20 @@
 #!/bin/bash
 
-system=""
+export IS_DOTFILES_INSTALL="true"
 
-while [[ -z "$system" ]]
-do
-    read -p "Selecciona el sistema operativo: " system
+read -p "Selecciona el sistema operativo: " system
 
-    if [[ "$system" != "macOS" && "$system" != "linux" ]]
-    then
-        echo "El sistema operativo $system no esta soportado"
-        echo "Los sistemas operativos soportados son:"
-        echo " > macOS"
-        echo " > linux"
+if [[ "$system" != "macOS" && "$system" != "linux" ]]
+then
+    echo "El sistema operativo $system no esta soportado"
+    echo "Los sistemas operativos soportados son:"
+    echo " > macOS"
+    echo " > linux"
+    exit 1
+fi
 
-        system=""
-    fi
-done
 
+so_install_script="install-${system,,}.sh"
 dotfiles_directory="$HOME/dotfiles"
 
 if [[ ! -d "$dotfiles_directory" ]]
@@ -61,6 +59,9 @@ export DOTFILES_ROOT_DIRECTORY="$dotfiles_directory"
 export DOTFILES_DIRECTORY="$dotfiles_directory/$system"
 source ${DOTFILES_ROOT_DIRECTORY}/init.sh
 
+# Operating system specific install
+$so_install_script
+
 which python3
 
 if [[ $? -gt 0 ]]
@@ -76,5 +77,7 @@ then
     echo "No se ha podido crear los enlaces simbolicos debido a un error!"
     exit 1
 fi
+
+export IS_DOTFILES_INSTALL="false"
 
 echo "Para aplicar los cambios reinicia la terminal"
