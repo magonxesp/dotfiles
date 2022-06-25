@@ -1,6 +1,7 @@
 from typing import List
 import yaml
 import os
+import shutil
 
 
 def parse_sym_links_config(symlinksfile: str):
@@ -26,9 +27,12 @@ def makelink(override: bool, origin: str, destination: str):
     if os.path.islink(destination) and override:
         os.unlink(destination)
 
+    if os.path.isdir(destination) and override:
+        shutil.rmtree(destination)
+
     link_directory = os.path.dirname(destination)
 
-    if os.path.isdir(link_directory) is False:
+    if os.path.isdir(link_directory) is False and os.path.isdir(origin) is False:
         os.makedirs(link_directory)
 
     os.symlink(origin, destination)
