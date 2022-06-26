@@ -10,9 +10,6 @@ symlinks:
     # Neofetch
     - ~/.config/neofetch/config.conf:~/dotfiles/share/config/neofetch/config.conf
 
-    # Urxvt terminal
-    - ~/.Xresources:~/dotfiles/linux/config/urxvt/Xresources
-
     # Rofi
     - ~/.config/rofi/config.rasi:~/dotfiles/linux/config/rofi/config.rasi
     - ~/.config/rofi/slate.rasi:~/dotfiles/linux/config/rofi/themes/slate.rasi
