@@ -3,3 +3,4 @@
 .vscode
 /backups
 node_modules
+.uuid

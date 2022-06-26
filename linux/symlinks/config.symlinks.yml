@@ -26,3 +26,4 @@ symlinks:
 
     # Themes
     - ~/.themes:~/dotfiles/linux/themes
+    - ~/.fonts:~/dotfiles/linux/fonts
