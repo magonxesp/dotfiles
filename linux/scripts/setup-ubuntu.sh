@@ -19,13 +19,7 @@ sudo apt install -y \
   vim \
   fonts-font-awesome \
   bspwm \
-  xfce4-desktop
-
-# setup zsh
-echo "Instalando zsh..."
-sudo apt install -y zsh curl
-chsh -s $(which zsh)
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  xfce4
 
 sudo apt-add-repository ppa:neovim-ppa/stable -y
 sudo apt update
