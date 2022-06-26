@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "Instalando zsh..."
 sudo apt install -y zsh curl
 chsh -s $(which zsh)
