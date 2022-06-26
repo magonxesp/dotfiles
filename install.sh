@@ -82,6 +82,6 @@ then
     exit 1
 fi
 
-export IS_DOTFILES_INSTALL="false"
+export IS_DOTFILES_INSTALL=""
 
 echo "Para aplicar los cambios reinicia la terminal"
