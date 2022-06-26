@@ -60,7 +60,10 @@ export DOTFILES_DIRECTORY="$dotfiles_directory/$system"
 source ${DOTFILES_ROOT_DIRECTORY}/init.sh
 
 # Operating system specific install
-$so_install_script
+if [[ -f $so_install_script ]]
+then
+    $so_install_script
+fi
 
 which python3
 
