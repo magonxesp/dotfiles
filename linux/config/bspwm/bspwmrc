@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ $XDG_CONFIG_HOME != "XFCE" ]]; then
+if [[ $XDG_CURRENT_DESKTOP != "XFCE" ]]; then
     $HOME/.config/polybar/launch.sh --forest
 fi
 
