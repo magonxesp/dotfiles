@@ -23,7 +23,8 @@ symlinks:
     - ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml:~/dotfiles/linux/config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml
     - ~/.config/picom/picom.conf:~/dotfiles/linux/config/picom/picom.conf
     - ~/.config/gtk-3.0/gtk.css:~/dotfiles/linux/config/gtk-3.0/gtk.css
+    - ~/.config/polybar:~/dotfiles/linux/config/polybar
 
     # Themes
     - ~/.themes:~/dotfiles/linux/themes
-    - ~/.fonts:~/dotfiles/linux/fonts
+    - ~/.local/share/fonts:~/dotfiles/linux/fonts
