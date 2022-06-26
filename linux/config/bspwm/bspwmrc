@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ $XDG_CURRENT_DESKTOP != "XFCE" ]]; then
+if [[ -z $(pgrep -x xfce4-panel) ]]; then
     $HOME/.config/polybar/launch.sh --forest
 fi
 
