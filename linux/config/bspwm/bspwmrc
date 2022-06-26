@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/bash
 
 if [[ $XDG_CONFIG_HOME != "XFCE" ]]; then
     $HOME/.config/polybar/launch.sh --forest
