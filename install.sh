@@ -13,8 +13,6 @@ then
     exit 1
 fi
 
-
-so_install_script="install-${system,,}.sh"
 dotfiles_directory="$HOME/dotfiles"
 
 if [[ ! -d "$dotfiles_directory" ]]
@@ -24,6 +22,7 @@ then
 fi
 
 home_dotfiles_backups="$dotfiles_directory/backups"
+so_install_script="$dotfiles_directory/install-${system,,}.sh"
 
 echo "La ruta de los dotfiles se ha configurado en $dotfiles_directory"
 
