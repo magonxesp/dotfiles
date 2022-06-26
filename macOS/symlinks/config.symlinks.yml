@@ -4,9 +4,6 @@ symlinks:
 
   # links simbolicos
   links:
-    # kitty terminal
-    - ~/.config/kitty/kitty.conf:~/dotfiles/share/config/kitty/kitty.conf
-
     # Neofetch
     - ~/.config/neofetch/config.conf:~/dotfiles/share/config/neofetch/config.conf
 
