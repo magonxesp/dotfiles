@@ -11,6 +11,6 @@ fi
 
 case ${distro,,} in
     "ubuntu")
-        $DOTFILES_DIRECTORY/scripts/setup-ubuntu.sh
+        $DOTFILES_DIRECTORY/scripts/ubuntu/install-packages.sh
     ;;
 esac
