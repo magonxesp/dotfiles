@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ -z $(pgrep -x xfce4-panel) ]]; then
+if [[ $DESKTOP_SESSION != "xfce" ]]; then
     $HOME/.config/polybar/launch.sh --forest
 fi
 
