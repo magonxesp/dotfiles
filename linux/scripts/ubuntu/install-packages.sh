@@ -19,7 +19,8 @@ sudo apt install -y \
   vim \
   fonts-font-awesome \
   bspwm \
-  xfce4
+  xfce4 \
+  picom
 
 sudo apt-add-repository ppa:neovim-ppa/stable -y
 sudo apt update
