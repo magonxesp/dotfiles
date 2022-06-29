@@ -12,7 +12,6 @@ symlinks:
 
     # Rofi
     - ~/.config/rofi/config.rasi:~/dotfiles/linux/config/rofi/config.rasi
-    - ~/.config/rofi/slate.rasi:~/dotfiles/linux/config/rofi/themes/slate.rasi
 
     # WM config
     - ~/.config/bspwm/bspwmrc:~/dotfiles/linux/config/bspwm/bspwmrc
@@ -23,4 +22,8 @@ symlinks:
 
     # Themes
     - ~/.themes:~/dotfiles/linux/themes/desktop
+    - ~/.config/kitty/themes:~/dotfiles/linux/themes/kitty
+    - ~/.config/rofi/themes:~/dotfiles/linux/themes/rofi
+
+    # Fonts  
     - ~/.local/share/fonts:~/dotfiles/linux/fonts
