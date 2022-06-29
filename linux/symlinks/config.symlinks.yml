@@ -22,5 +22,5 @@ symlinks:
     - ~/.config/polybar:~/dotfiles/linux/config/polybar
 
     # Themes
-    - ~/.themes:~/dotfiles/linux/themes
+    - ~/.themes:~/dotfiles/linux/themes/desktop
     - ~/.local/share/fonts:~/dotfiles/linux/fonts
