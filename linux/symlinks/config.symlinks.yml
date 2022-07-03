@@ -6,8 +6,9 @@ symlinks:
   links:
     # kitty terminal
     - ~/.config/kitty/kitty.conf:~/dotfiles/linux/config/kitty/kitty.conf
-
-    # Neofetch
+    - ~/.config/kitty/current-theme.conf:~/dotfiles/linux/config/kitty/current-theme.conf
+    
+      # Neofetch
     - ~/.config/neofetch/config.conf:~/dotfiles/share/config/neofetch/config.conf
 
     # Rofi
