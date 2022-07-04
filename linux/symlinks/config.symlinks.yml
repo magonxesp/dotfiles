@@ -5,6 +5,7 @@ symlinks:
   # links simbolicos
   links:
     # Shell config
+    - ~/.zshrc:~/dotfiles/share/config/zsh/zshrc
     - ~/.config/fish:~/dotfiles/share/config/fish
     
     # kitty terminal
