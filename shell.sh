@@ -1,6 +1,5 @@
 #!/bin/bash
 
-if [[ -f "$HOME/.zshrc" ]]; then
-    # Init zshrc
+if [[ $SHELL == $(which zsh) ]]; then
     source ${DOTFILES_ROOT_DIRECTORY}/share/shell/zsh/zshrc
 fi

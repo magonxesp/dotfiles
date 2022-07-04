@@ -4,6 +4,9 @@ symlinks:
 
   # links simbolicos
   links:
+    # Shell config
+    - ~/.config/fish:~/dotfiles/share/config/fish
+
     # Neofetch
     - ~/.config/neofetch/config.conf:~/dotfiles/share/config/neofetch/config.conf
 
