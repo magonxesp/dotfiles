@@ -102,3 +102,5 @@ source $ZSH/oh-my-zsh.sh
 
 # Dotfiles init script
 source $DOTFILES_ROOT_DIRECTORY/share/shell/init.sh
+
+neofetch

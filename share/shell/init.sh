@@ -13,6 +13,3 @@ if [[ -f $DOTFILES_DIRECTORY/shell/exports.sh ]]; then
     source ${DOTFILES_DIRECTORY}/shell/exports.sh
 fi
 
-if [[ -z "$IS_DOTFILES_INSTALL" ]]; then
-    source ${DOTFILES_ROOT_DIRECTORY}/share/shell/startup.sh
-fi
