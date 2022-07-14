@@ -12,7 +12,7 @@ Tanto para macOS y linux:
 
 * ✅ [python 3](https://www.python.org/downloads) (3.9 o superior)
 * ✅ [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) o [fish](https://github.com/fish-shell/fish-shell)
-* ✅ [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh/wiki)
+* ✅ [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh/wiki) o [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish)
 * ✅ [neofetch](https://github.com/dylanaraps/neofetch)
 * ✅ [powerline fonts](https://github.com/powerline/fonts)
 * ✅ [imagemagick](https://imagemagick.org/script/download.php)
