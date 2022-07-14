@@ -11,7 +11,7 @@ Antes de ejecutar el script de instalacion hay que asegurarse de que en el siste
 Tanto para macOS y linux:
 
 * ✅ [python 3](https://www.python.org/downloads) (3.9 o superior)
-* ✅ [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
+* ✅ [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) o [fish](https://github.com/fish-shell/fish-shell)
 * ✅ [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh/wiki)
 * ✅ [neofetch](https://github.com/dylanaraps/neofetch)
 * ✅ [powerline fonts](https://github.com/powerline/fonts)
@@ -23,6 +23,7 @@ Solo en linux:
 * ✅ [kitty](https://github.com/kovidgoyal/kitty)
 * ✅ [bspwm](https://wiki.archlinux.org/title/Bspwm_(Espa%C3%B1ol))
 * ✅ [picom](https://wiki.archlinux.org/title/Picom)
+* ✅ [xfce](https://www.xfce.org/)
 
 Solo en macOS:
 
@@ -30,13 +31,35 @@ Solo en macOS:
 * ✅ [yabai](https://github.com/koekeishiya/yabai)
 * ✅ [skhd](https://github.com/koekeishiya/skhd)
 
-Para instalar los dotfiles hay que ejecutar el script ``install.sh``
+## Instalación en Ubuntu
 
-NOTA: Para instalar usando zsh hay que instalarlo antes de ejecutar el script ``install.sh``. Si el fichero ``.zshrc`` no esta disponible se usara ``.bashrc`` por defecto.
+Para instalar una shell existen los siguientes scripts.
+
+Para instalar fish
+```sh
+$ linux/scripts/ubuntu/install-fish.sh
+```
+
+Para instalar zsh.
+```sh
+$ linux/scripts/ubuntu/install-zsh.sh
+```
+
+Despues de instalar la shell ya puedes instalar el resto de paquetes necesarios.
 
 ```sh
-chmod +x install.sh
-./install.sh
+$ linux/scripts/ubuntu/install-packages.sh
+```
+
+## Ejecutar el script de instalacion
+
+Una vez ya esta instalada la shell y el resto de paquetes necesarios ya puedes instalar los dotfiles.
+
+Para instalar los dotfiles hay que ejecutar el script ``install.sh``
+
+```sh
+$ chmod +x install.sh
+$ ./install.sh
 ```
 
 ## Comandos
@@ -44,5 +67,5 @@ chmod +x install.sh
 El comando ```dotfiles``` puede ayudar a refrescar los enlaces simbolicos de los dotfiles
 
 ```sh
-dotfiles reload-symlinks
+$ dotfiles reload-symlinks
 ```
