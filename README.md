@@ -51,6 +51,21 @@ Despues de instalar la shell ya puedes instalar el resto de paquetes necesarios.
 $ linux/scripts/ubuntu/install-packages.sh
 ```
 
+## Instalación en Arch Linux
+
+Para instalar una shell existen los siguientes scripts.
+
+Para instalar fish
+```sh
+$ linux/scripts/archlinux/install-fish.sh
+```
+
+Despues de instalar la shell ya puedes instalar el resto de paquetes necesarios.
+
+```sh
+$ linux/scripts/archlinux/install-packages.sh
+```
+
 ## Ejecutar el script de instalacion
 
 Una vez ya esta instalada la shell y el resto de paquetes necesarios ya puedes instalar los dotfiles.
