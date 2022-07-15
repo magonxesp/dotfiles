@@ -38,4 +38,5 @@ sudo pacman -S bspwm \
     nodejs \
     npm \
     picom \
-    kitty
+    kitty \
+    xorg-xsetroot
