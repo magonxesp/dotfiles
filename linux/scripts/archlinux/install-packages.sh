@@ -23,7 +23,8 @@ yay -S ttf-gelasio-ib \
 sudo pacman -S papirus-icon-theme
 
 # Install needed packages
-sudo pacman -S bspwm \
+sudo pacman -S git \
+    bspwm \
     sxhkd \
     xfce4 \
     neovim \
