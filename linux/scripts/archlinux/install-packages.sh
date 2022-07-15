@@ -40,4 +40,5 @@ sudo pacman -S git \
     npm \
     picom \
     kitty \
-    xorg-xsetroot
+    xorg-xsetroot \
+    polybar
