@@ -6,6 +6,7 @@ symlinks:
   links:
     # Shell config
     - ~/.zshrc:~/dotfiles/share/config/zsh/zshrc
+    - ~/.oh-my-zsh/custom:~/dotfiles/share/config/zsh/custom
     - ~/.config/fish:~/dotfiles/share/config/fish
     
     # Neofetch
