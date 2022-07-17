@@ -42,3 +42,6 @@ sudo pacman -S git \
     kitty \
     xorg-xsetroot \
     polybar
+
+# Install extra packages from AUR
+yay -S pfetch

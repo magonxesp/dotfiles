@@ -1,3 +1,5 @@
+set fish_greeting
+
 if status is-login
     fenv "source $HOME/.fish_profile"
 end

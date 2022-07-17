@@ -24,6 +24,7 @@ Solo en linux:
 * ✅ [bspwm](https://wiki.archlinux.org/title/Bspwm_(Espa%C3%B1ol))
 * ✅ [picom](https://wiki.archlinux.org/title/Picom)
 * ✅ [xfce](https://www.xfce.org/)
+* ✅ [GNOME](https://www.gnome.org/)
 
 Solo en macOS:
 
@@ -84,3 +85,7 @@ El comando ```dotfiles``` puede ayudar a refrescar los enlaces simbolicos de los
 ```sh
 $ dotfiles reload-symlinks
 ```
+
+## Configuración del entorno de escritorio
+
+* [GNOME](docs/gnome.md)

@@ -14,3 +14,5 @@ fi
 # alias for permissions
 alias own="sudo chown $USER:$USER"
 alias ownr="sudo chown -R $USER:$USER"
+
+alias neofetchl="neofetch --disable theme icons memory resolution wm terminal cpu gpu --color_blocks off"
