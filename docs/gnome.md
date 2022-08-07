@@ -18,6 +18,10 @@ Las extensiones se pueden instalar y activar desde https://extensions.gnome.org/
 * [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
 * [Tray Icons: Reloaded](https://extensions.gnome.org/extension/2890/tray-icons-reloaded/)
 * [Resource Monitor](https://extensions.gnome.org/extension/1634/resource-monitor/)
+* [Rounded Window Corners](https://extensions.gnome.org/extension/5237/rounded-window-corners/)
+* [Just Perfection](https://extensions.gnome.org/extension/3843/just-perfection/)
+* [Blur my Shell](https://extensions.gnome.org/extension/3193/blur-my-shell/) (opcional)
+* [Transparent Top Bar](https://extensions.gnome.org/extension/3960/transparent-top-bar-adjustable-transparency/) (opcional)
 
 ## Temas y fuentes
 
