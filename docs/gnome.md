@@ -22,6 +22,8 @@ Las extensiones se pueden instalar y activar desde https://extensions.gnome.org/
 * [Just Perfection](https://extensions.gnome.org/extension/3843/just-perfection/)
 * [Blur my Shell](https://extensions.gnome.org/extension/3193/blur-my-shell/) (opcional)
 * [Transparent Top Bar](https://extensions.gnome.org/extension/3960/transparent-top-bar-adjustable-transparency/) (opcional)
+* [Applications Menu](https://extensions.gnome.org/extension/6/applications-menu/)
+* [Places Status Indicator](https://extensions.gnome.org/extension/8/places-status-indicator/)
 
 ## Temas y fuentes
 
