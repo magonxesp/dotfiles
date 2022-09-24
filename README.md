@@ -11,8 +11,8 @@ Antes de ejecutar el script de instalacion hay que asegurarse de que en el siste
 Tanto para macOS y linux:
 
 * ✅ [python 3](https://www.python.org/downloads) (3.9 o superior)
-* ✅ [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) o [fish](https://github.com/fish-shell/fish-shell)
-* ✅ [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh/wiki) o [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish)
+* ✅ [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
+* ✅ [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh/wiki)
 * ✅ [neofetch](https://github.com/dylanaraps/neofetch)
 * ✅ [powerline fonts](https://github.com/powerline/fonts)
 * ✅ [imagemagick](https://imagemagick.org/script/download.php)
@@ -36,11 +36,6 @@ Solo en macOS:
 
 Para instalar una shell existen los siguientes scripts.
 
-Para instalar fish
-```sh
-$ linux/scripts/ubuntu/install-fish.sh
-```
-
 Para instalar zsh.
 ```sh
 $ linux/scripts/ubuntu/install-zsh.sh
@@ -55,11 +50,6 @@ $ linux/scripts/ubuntu/install-packages.sh
 ## Instalación en Arch Linux
 
 Para instalar una shell existen los siguientes scripts.
-
-Para instalar fish
-```sh
-$ linux/scripts/archlinux/install-fish.sh
-```
 
 Despues de instalar la shell ya puedes instalar el resto de paquetes necesarios.
 

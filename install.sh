@@ -70,7 +70,6 @@ fi
 profile_files=(
     ~/.profile
     ~/.zprofile
-    ~/.fish_profile
 )
 
 #

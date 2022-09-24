@@ -16,3 +16,7 @@ if [[ "$TERM" == "xterm-kitty" ]]; then
 else
     export NEOFETCH_IMAGE_BACKEND="iterm2"
 fi
+
+if [[ -d "$HOME/Library/Python/3.10/bin" ]]; then
+    export PATH="$HOME/Library/Python/3.10/bin:$PATH"
+fi
