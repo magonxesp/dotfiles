@@ -1,3 +1,3 @@
 #!/bin/bash
 
-export KITTY_THEME="default"
+export KITTY_THEME="$DOTFILES_DIRECTORY/themes/kitty/catppuccin-latte.conf"
