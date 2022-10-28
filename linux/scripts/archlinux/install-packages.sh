@@ -24,9 +24,6 @@ sudo pacman -S papirus-icon-theme
 
 # Install needed packages
 sudo pacman -S git \
-    bspwm \
-    sxhkd \
-    xfce4 \
     neovim \
     vim \
     python \
@@ -38,10 +35,9 @@ sudo pacman -S git \
     neofetch \
     nodejs \
     npm \
-    picom \
     kitty \
     xorg-xsetroot \
-    polybar
+    gtk-engine-murrine
 
 # Install extra packages from AUR
 yay -S pfetch
