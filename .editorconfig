@@ -1,0 +1,10 @@
+[*]
+end_of_line = lf
+insert_final_newline = true
+indent_style = tab
+
+[*.{sh,conf,py}]
+indent_size = 4
+
+[*.{yml,yaml}]
+indent_size = 2
