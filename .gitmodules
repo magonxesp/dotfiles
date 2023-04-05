@@ -2,12 +2,12 @@
 
 [submodule "zsh-plugin/zsh-autosuggestions"]
 	path = share/config/zsh/custom/plugins/zsh-autosuggestions
-	url = git://github.com/zsh-users/zsh-autosuggestions.git
+	url = https://github.com/zsh-users/zsh-autosuggestions
 
 [submodule "zsh-plugin/zsh-history-substring-search"]
 	path = share/config/zsh/custom/plugins/zsh-history-substring-search
-	url = git://github.com/zsh-users/zsh-history-substring-search.git
+	url = https://github.com/zsh-users/zsh-history-substring-search.git
 
 [submodule "zsh-plugin/zsh-syntax-highlighting"]
 	path = share/config/zsh/custom/plugins/zsh-syntax-highlighting
-	url = git://github.com/zsh-users/zsh-syntax-highlighting.git
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git

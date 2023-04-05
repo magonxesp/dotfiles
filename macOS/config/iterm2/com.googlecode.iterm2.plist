@@ -2182,6 +2182,8 @@
 	<string>F0092F8C-323B-4613-8DCD-1997EFC8B9A3</string>
 	<key>DisableFullscreenTransparency</key>
 	<false/>
+	<key>DismemberScrollView</key>
+	<true/>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HideScrollbar</key>
@@ -2238,7 +2240,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>0 167 224 275 0 0 1920 1055 </string>
+	<string>0 167 224 275 0 0 1680 1025 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>440 454 799 448 0 0 1680 1025 </string>
 	<key>NSWindow Frame ProfilesPanel</key>
@@ -2248,9 +2250,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 496 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>317 346 810 447 0 0 1680 1025 </string>
+	<string>593 182 923 537 0 0 1680 1025 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>714 110 810 447 0 0 1680 1025 </string>
+	<string>740 357 825 539 0 0 2560 1415 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>732 80 650 441 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
@@ -2825,11 +2827,11 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>AppleBraille-Outline6Dot 13</string>
+			<string>AppleBraille-Outline6Dot 18</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>PTMono-Regular 15</string>
+			<string>PTMono-Regular 18</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<true/>
 			<key>Option Key Sends</key>
@@ -2887,7 +2889,7 @@
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
-			<true/>
+			<false/>
 			<key>Vertical Spacing</key>
 			<real>1</real>
 			<key>Visual Bell</key>
@@ -3519,13 +3521,13 @@
 			<key>Name</key>
 			<string>Eighties</string>
 			<key>Non Ascii Font</key>
-			<string>AppleBraille-Outline6Dot 13</string>
+			<string>AppleBraille-Outline6Dot 18</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Non-ASCII Ligatures</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>PTMono-Regular 16</string>
+			<string>PTMono-Regular 18</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<true/>
 			<key>Option Key Sends</key>
@@ -3595,7 +3597,7 @@
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
-			<true/>
+			<false/>
 			<key>Vertical Spacing</key>
 			<real>1</real>
 			<key>Visual Bell</key>
@@ -4221,11 +4223,11 @@
 			<key>Name</key>
 			<string>Ocean dark</string>
 			<key>Non Ascii Font</key>
-			<string>AppleBraille-Outline6Dot 13</string>
+			<string>AppleBraille-Outline6Dot 18</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>PTMono-Regular 16</string>
+			<string>PTMono-Regular 18</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<true/>
 			<key>Option Key Sends</key>
@@ -4287,7 +4289,7 @@
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
-			<true/>
+			<false/>
 			<key>Vertical Spacing</key>
 			<real>1</real>
 			<key>Visual Bell</key>
@@ -4913,13 +4915,13 @@
 			<key>Name</key>
 			<string>kasugano</string>
 			<key>Non Ascii Font</key>
-			<string>AppleBraille-Outline6Dot 13</string>
+			<string>AppleBraille-Outline6Dot 18</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Non-ASCII Ligatures</key>
 			<false/>
 			<key>Normal Font</key>
-			<string>PTMono-Regular 16</string>
+			<string>JetBrainsMono-Regular 18</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<true/>
 			<key>Option Key Sends</key>
@@ -4987,7 +4989,7 @@
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
-			<true/>
+			<false/>
 			<key>Vertical Spacing</key>
 			<real>1</real>
 			<key>Visual Bell</key>
@@ -5008,19 +5010,20 @@
 		<string>3.3.9</string>
 		<string>3.4.2</string>
 	</array>
+	<key>NoSyncBFPFavorites</key>
+	<array>
+		<string>JetBrains Mono</string>
+	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
-		<string>Arial</string>
-		<string>PT Mono</string>
-		<string>Monaco</string>
-		<string>Apple Color Emoji</string>
+		<string>JetBrains Mono</string>
 	</array>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{236, 776}</string>
+		<string>{243, 744}</string>
 	</dict>
 	<key>NoSyncIgnoreSystemWindowRestoration</key>
 	<true/>
@@ -5029,7 +5032,7 @@
 	<key>NoSyncLastOSVersion</key>
 	<string>Version 10.15.6 (Build 19G2021)</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>251</integer>
+	<integer>346</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
