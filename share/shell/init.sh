@@ -13,3 +13,6 @@ if [[ -f $DOTFILES_DIRECTORY/shell/exports.sh ]]; then
     source ${DOTFILES_DIRECTORY}/shell/exports.sh
 fi
 
+if [[ -f ~/.dotfilesrc ]]; then
+    source ~/.dotfilesrc
+fi
