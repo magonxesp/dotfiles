@@ -5,3 +5,11 @@
 if [[ -d "$HOME/.local/bin" ]]; then
     export PATH=$PATH:$HOME/.local/bin
 fi
+
+# Bun JavaScript runtime
+[ -s "$HOME/.bun/_bun" ] && source "/home/juanma-alvarez/.bun/_bun"
+
+if [[ -d "$HOME/.bun" ]]; then
+    export BUN_INSTALL="$HOME/.bun"
+    export PATH="$BUN_INSTALL/bin:$PATH"
+fi
