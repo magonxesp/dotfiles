@@ -16,3 +16,5 @@ alias own="sudo chown $USER:$USER"
 alias ownr="sudo chown -R $USER:$USER"
 
 alias neofetchl="neofetch --disable theme icons memory resolution wm terminal cpu gpu --color_blocks off"
+alias github-configure-local-profile="git config --local user.email 'janma.360@gmail.com' && git config --local user.name 'MagonxESP'"
+alias github-configure-global-profile="git config --global user.email 'janma.360@gmail.com' && git config --global user.name 'MagonxESP'"
