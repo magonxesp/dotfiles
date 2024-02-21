@@ -16,10 +16,7 @@ sudo apt install -y \
   nodejs \
   npm \
   vim \
-  fonts-font-awesome \
-  bspwm \
-  xfce4 \
-  picom
+  fonts-font-awesome
 
 
 curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
@@ -69,3 +66,9 @@ sudo apt install -y docker-ce docker-ce-cli containerd.io
 
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
+
+echo "Instalando sdkman..."
+curl -s "https://get.sdkman.io" | bash
+
+echo "Instalando rustup..."
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
