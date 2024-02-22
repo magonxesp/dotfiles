@@ -53,6 +53,3 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 nvm install --lts
 nvm use --lts
 nvm alias default $(node -v)
-
-export bin_path="$HOME/.local/bin"
-curl -sfL https://direnv.net/install.sh | bash

@@ -51,10 +51,6 @@ nvm install --lts
 nvm use --lts
 nvm alias default $(node -v)
 
-echo "Instalando plugins de zsh..."
-export bin_path="$HOME/.local/bin"
-curl -sfL https://direnv.net/install.sh | bash
-
 
 read -p "Install extra packages (y/n)" extra
 
