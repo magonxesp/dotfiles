@@ -70,7 +70,7 @@ ZSH_THEME="nicoulaj"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting jenv nvm nodenv direnv)
+plugins=(git zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting jenv nvm nodenv zsh-auto-env)
 
 source $ZSH/oh-my-zsh.sh
 
