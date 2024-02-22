@@ -70,7 +70,7 @@ ZSH_THEME="nicoulaj"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting jenv nvm nodenv direnv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -102,3 +102,4 @@ source $ZSH/oh-my-zsh.sh
 
 # Dotfiles init script
 source $DOTFILES_ROOT_DIRECTORY/share/shell/init.sh
+eval "$(direnv hook zsh)"

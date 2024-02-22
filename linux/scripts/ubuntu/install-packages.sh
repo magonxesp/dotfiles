@@ -1,4 +1,7 @@
 #!/bin/bash
+if [[ ! -d "$HOME/.local/bin" ]]; then
+    mkdir -p "$HOME/.local/bin"
+fi
 
 sudo apt update
 
@@ -37,6 +40,21 @@ sudo add-apt-repository ppa:papirus/papirus -y
 sudo apt-get update
 sudo apt-get install -y papirus-icon-theme
 
+echo "Instalando nvm..."
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+echo "Instalando ultima version de nodejs (LTS)..."
+nvm install --lts
+nvm use --lts
+nvm alias default $(node -v)
+
+echo "Instalando plugins de zsh..."
+export bin_path="$HOME/.local/bin"
+curl -sfL https://direnv.net/install.sh | bash
+
 
 read -p "Install extra packages (y/n)" extra
 
@@ -51,7 +69,6 @@ echo "Instalando docker..."
 sudo apt update
 sudo apt install -y \
   ca-certificates \
-  curl \
   gnupg \
   lsb-release
 
