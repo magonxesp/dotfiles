@@ -1,0 +1,9 @@
+com.jetbrains.webstorm.web-assembly-plugin
+Dart
+com.intellij.lang.jsgraphql
+some.awesome
+Docker
+com.jetbrains.kmm
+org.jetbrains.compose.desktop.ide
+com.almightyalpaca.intellij.plugins.discord
+io.flutter
