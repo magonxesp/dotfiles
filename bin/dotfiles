@@ -1,0 +1,29 @@
+#!/bin/bash
+
+platform=`uname -s`
+arch=`uname -m`
+script_location="$(dirname $(readlink -f "${BASH_SOURCE}"))"
+java_home=""
+
+# Linux
+if [[ "$platform" == "Linux" ]]; then
+	if [[ "$arch" == "x86_64" ]]; then
+		java_home="$script_location/jre/linux_x64/bin"
+	fi
+fi
+
+# MacOS
+if [[ "$platform" == "Darwin" ]]; then
+	if [[ "$arch" == "x86_64" ]]; then
+		java_home="$script_location/jre/macOS_x64/Contents/Home/bin"
+	elif [[ "$arch" == "arm64" ]]; then
+		java_home="$script_location/jre/macOS_arm64/Contents/Home/bin"
+    fi
+fi
+
+if [[ "$java_home" == "" ]]; then
+	echo "Platform not supported"
+	exit 1
+fi
+
+exec "$java_home/java" -jar "$script_location/dotfiles.jar" "$@"

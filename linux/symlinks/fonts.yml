@@ -1,0 +1,7 @@
+symlinks:
+  # Reemplaza los ficheros existentes por enlaces simbolicos
+  override: true
+
+  # links simbolicos
+  links:
+    - "~/.local/share/fonts:~/dotfiles/linux/fonts"

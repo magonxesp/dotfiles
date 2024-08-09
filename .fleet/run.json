@@ -1,0 +1,14 @@
+{
+	"configurations": [
+		{
+			"name": "update-symplinks [cli:run]",
+			"type": "gradle",
+			"workingDir": "$PROJECT_DIR$",
+			"tasks": ["cli:run"],
+			"args": ["--args='update-symlinks'"],
+			"initScripts": {
+				"flmapper": "ext.mapPath = { path -> path }"
+			}
+		}
+	]
+}

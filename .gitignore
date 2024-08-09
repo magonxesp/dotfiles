@@ -4,3 +4,7 @@
 /backups
 node_modules
 .uuid
+.gradle
+build
+.kotlin
+bin/jre/tmp

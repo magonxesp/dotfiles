@@ -1,0 +1,8 @@
+symlinks:
+  # Reemplaza los ficheros existentes por enlaces simbolicos
+  override: true
+
+  # links simbolicos
+  links:
+    - "~/.config/kitty/kitty.conf:~/dotfiles/linux/config/kitty/kitty.conf"
+    - "~/.config/kitty/current-theme.conf:~/dotfiles/linux/config/kitty/current-theme.conf"

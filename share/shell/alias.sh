@@ -1,6 +1,6 @@
 #!/bin/bash
 
-alias dotfiles="$DOTFILES_ROOT_DIRECTORY/share/scripts/dotfiles.sh"
+alias dotfiles-legacy="$DOTFILES_ROOT_DIRECTORY/share/scripts/dotfiles.sh"
 
 if [[ $TERM == "xterm-kitty" ]]; then
     alias ssh="TERM=xterm-256color ssh"

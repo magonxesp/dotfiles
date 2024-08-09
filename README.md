@@ -10,7 +10,9 @@ Antes de ejecutar el script de instalacion hay que asegurarse de que en el siste
 
 Tanto para macOS y linux:
 
-* ✅ [python 3](https://www.python.org/downloads) (3.9 o superior)
+* ⚠️ [python 3](https://www.python.org/downloads) (3.9 o superior)
+	* Python ya no es necesario y los scripts que hay se han deprecado a favor del nuevo programa `dotfiles` escrito en kotlin.
+	* Para poder volver a usar los scripts en python tienes que ejecutar el script `support-legacy-scripts.sh` y ejecutar a posterior el script deseado desde el comando `dotfiles-legacy` (puede que algunos scripts hayan dejado de funcionar).
 * ✅ [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
 * ✅ [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh/wiki)
 * ✅ [neofetch](https://github.com/dylanaraps/neofetch)
@@ -19,11 +21,7 @@ Tanto para macOS y linux:
 
 Solo en linux:
 
-* ✅ [rofi](https://github.com/davatorium/rofi)
 * ✅ [kitty](https://github.com/kovidgoyal/kitty)
-* ✅ [bspwm](https://wiki.archlinux.org/title/Bspwm_(Espa%C3%B1ol))
-* ✅ [picom](https://wiki.archlinux.org/title/Picom)
-* ✅ [xfce](https://www.xfce.org/)
 * ✅ [GNOME](https://www.gnome.org/)
 
 Solo en macOS:
@@ -47,16 +45,6 @@ Despues de instalar la shell ya puedes instalar el resto de paquetes necesarios.
 $ linux/scripts/ubuntu/install-packages.sh
 ```
 
-## Instalación en Arch Linux
-
-Para instalar una shell existen los siguientes scripts.
-
-Despues de instalar la shell ya puedes instalar el resto de paquetes necesarios.
-
-```sh
-$ linux/scripts/archlinux/install-packages.sh
-```
-
 ## Ejecutar el script de instalacion
 
 Una vez ya esta instalada la shell y el resto de paquetes necesarios ya puedes instalar los dotfiles.
@@ -73,7 +61,7 @@ $ ./install.sh
 El comando ```dotfiles``` puede ayudar a refrescar los enlaces simbolicos de los dotfiles
 
 ```sh
-$ dotfiles reload-symlinks
+$ dotfiles update-symlinks
 ```
 
 ## Configuración del entorno de escritorio

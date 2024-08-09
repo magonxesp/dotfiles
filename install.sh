@@ -96,24 +96,19 @@ fi
 source ${DOTFILES_ROOT_DIRECTORY}/share/shell/init.sh
 
 #
-# Check if python 3 is installed
+# Check dotfiles command is available
 #
-which python3
+which dotfiles
 
 if [[ $? -gt 0 ]]
 then
-  echo "Se necesita Python 3.9 o mayor para continuar"
+  echo "El comando dotfiles no se encuentra o puede que no se haya añadido a la variable PATH"
 fi
-
-#
-# Install python dependencies
-#
-pip3 install -r ${DOTFILES_ROOT_DIRECTORY}/share/scripts/requirements.txt
 
 #
 # Setup the symlinks from the home directory to the dotfiles directory
 #
-python3 ${DOTFILES_ROOT_DIRECTORY}/share/scripts/symlinks.py
+dotfiles update-symlinks
 
 if [[ $? -gt 0 ]]
 then

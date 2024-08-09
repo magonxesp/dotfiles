@@ -1,0 +1,9 @@
+symlinks:
+  # Reemplaza los ficheros existentes por enlaces simbolicos
+  override: true
+
+  # links simbolicos
+  links:
+    - "~/.themes:~/dotfiles/linux/themes/desktop"
+    - "~/.config/kitty/themes:~/dotfiles/linux/themes/kitty"
+    - "~/.config/rofi/themes:~/dotfiles/linux/themes/rofi"
