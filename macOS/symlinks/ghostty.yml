@@ -4,4 +4,4 @@ symlinks:
 
   # links simbolicos
   links:
-    - "~/.local/share/fonts:~/dotfiles/share/fonts"
+    - "~/Library/Application Support/com.mitchellh.ghostty/config:~/dotfiles/share/config/ghostty/config"

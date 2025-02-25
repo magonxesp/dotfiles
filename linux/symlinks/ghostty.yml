@@ -4,4 +4,4 @@ symlinks:
 
   # links simbolicos
   links:
-    - "~/.config/iterm2/com.googlecode.iterm2.plist:~/dotfiles/macOS/config/iterm2/com.googlecode.iterm2.plist"
+    - "~/.config/ghostty/config:~/dotfiles/share/config/ghostty/config"

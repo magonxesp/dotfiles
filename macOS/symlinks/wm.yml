@@ -1,8 +1,0 @@
-symlinks:
-  # Reemplaza los ficheros existentes por enlaces simbolicos
-  override: true
-
-  # links simbolicos
-  links:
-    - "~/.config/yabai/yabairc:~/dotfiles/macOS/config/yabai/yabairc"
-    - "~/.config/skhd/skhdrc:~/dotfiles/macOS/config/skhd/skhdrc"
