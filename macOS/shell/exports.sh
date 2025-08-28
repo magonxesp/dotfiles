@@ -11,7 +11,7 @@ if [[ -d "/usr/local/opt/php@7.4/bin" ]]; then
     export PATH="/usr/local/opt/php@7.4/bin:$PATH"
 fi
 
-if [[ "$TERM" == "xterm-kitty" ]]; then
+if [[ "$TERM" == "xterm-kitty" ]] || [[ "$TERM" == "xterm-ghostty" ]]; then
     export NEOFETCH_IMAGE_BACKEND="kitty"
 else
     export NEOFETCH_IMAGE_BACKEND="iterm2"
