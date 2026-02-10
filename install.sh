@@ -32,12 +32,21 @@ then
 fi
 
 #
-# Backup directory
+# Build dotfiles CLI program
 #
 # Save files like .profile or .bashrc for restore
 # if necesary
 #
-home_dotfiles_backups="$dotfiles_directory/backups"
+which go
+
+if [[ $? -gt 0 ]]
+then
+  echo "Para continuar con la instalacion necesitas tener GO instalado https://go.dev/"
+  exit 1
+fi
+
+mkdir -p "$dotfiles_directory/bin"
+go build -o "$dotfiles_directory/bin/dotfiles" "$dotfiles_directory/cli"
 
 #
 # OS Install script
@@ -103,6 +112,7 @@ which dotfiles
 if [[ $? -gt 0 ]]
 then
   echo "El comando dotfiles no se encuentra o puede que no se haya añadido a la variable PATH"
+  exit 1
 fi
 
 #
