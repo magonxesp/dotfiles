@@ -12,12 +12,9 @@ sudo apt install -y \
   python3 \
   python3-pip \
   imagemagick \
-  rofi \
   fonts-powerline \
   neofetch \
   htop \
-  nodejs \
-  npm \
   vim \
   fonts-font-awesome
 
@@ -33,13 +30,6 @@ sudo apt-add-repository ppa:neovim-ppa/stable -y
 sudo apt update
 sudo apt install -y neovim
 
-echo "Instalando temas..."
-sudo apt install -y arc-theme
-
-sudo add-apt-repository ppa:papirus/papirus -y
-sudo apt-get update
-sudo apt-get install -y papirus-icon-theme
-
 echo "Instalando nvm..."
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
@@ -51,6 +41,11 @@ nvm install --lts
 nvm use --lts
 nvm alias default $(node -v)
 
+echo "Instalando sdkman..."
+curl -s "https://get.sdkman.io" | bash
+
+echo "Instalando rustup..."
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 read -p "Install extra packages (y/n)" extra
 
@@ -80,8 +75,3 @@ sudo apt install -y docker-ce docker-ce-cli containerd.io
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 
-echo "Instalando sdkman..."
-curl -s "https://get.sdkman.io" | bash
-
-echo "Instalando rustup..."
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
