@@ -14,3 +14,5 @@ case ${distro,,} in
         $DOTFILES_DIRECTORY/scripts/ubuntu/install-packages.sh
     ;;
 esac
+
+curl -fsSL https://deno.land/install.sh | sh

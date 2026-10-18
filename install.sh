@@ -49,6 +49,11 @@ home_dotfiles_backups="$dotfiles_directory/backups"
 so_install_script="$dotfiles_directory/install-${system,,}.sh"
 
 #
+# Export Deno path
+#
+export PATH="$HOME/.deno/bin:$PATH"
+
+#
 # Export the absolute path to the dotfiles directory
 #
 export DOTFILES_ROOT_DIRECTORY="$dotfiles_directory"
@@ -102,7 +107,7 @@ which dotfiles
 
 if [[ $? -gt 0 ]]
 then
-  echo "El comando dotfiles no se encuentra o puede que no se haya añadido a la variable PATH"
+  echo "El comando dotfiles no se encuentra o puede que no se haya definido el alias correctamente"
 fi
 
 #
