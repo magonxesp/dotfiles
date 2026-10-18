@@ -16,11 +16,18 @@ sudo apt install -y \
   nodejs \
   npm \
   vim \
-  fonts-font-awesome
+  fonts-font-awesome \
+  kitty
 
 sudo apt-add-repository ppa:neovim-ppa/stable -y
 sudo apt update
 sudo apt install -y neovim
+
+curl -fsSL https://raw.githubusercontent.com/dylanaraps/pfetch/refs/heads/master/pfetch > $HOME/.local/bin/pfetch
+chmod +x $HOME/.local/bin/pfetch
+
+curl -fsSL https://raw.githubusercontent.com/dylanaraps/neofetch/refs/heads/master/neofetch > $HOME/.local/bin/neofetch
+chmod +x $HOME/.local/bin/neofetch
 
 read -p "Install extra packages (y/n)" extra
 
