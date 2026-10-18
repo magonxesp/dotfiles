@@ -8,15 +8,20 @@ case $1 in
     "reload-symlinks")
         deno run -A $DOTFILES_ROOT_DIRECTORY/share/scripts/symlinks.ts
     ;;
+    "clean-symlinks")
+        deno run -A $DOTFILES_ROOT_DIRECTORY/share/scripts/clean-symlinks.ts
+    ;;
     "kitty-colors")
         deno run --allow-read "$DOTFILES_ROOT_DIRECTORY/share/scripts/kittycolors.ts" "${@:2}"
     ;;
-    "install-scripts-depencencies")
-        pip3 install -r $DOTFILES_ROOT_DIRECTORY/share/scripts/requirements.txt
+    "reload")
+        source $DOTFILES_ROOT_DIRECTORY/share/shell/init.sh
     ;;
     "os"*)
         if [[ -f ${DOTFILES_DIRECTORY}/scripts/commands.sh ]]; then
             ${DOTFILES_DIRECTORY}/scripts/commands.sh ${@:2}
+        else
+            echo "No hay comandos disponibles para este sistema operativo"
         fi
     ;;
     "-h")
@@ -34,9 +39,11 @@ case $1 in
         echo ""
         echo "  reload-symlinks  Actualiza los enlaces simbolicos de los dotfiles"
         echo ""
+        echo "  clean-symlinks  Limpia los enlaces simbolicos rotos configurados en los dotfiles"
+        echo ""
         echo "  kitty-colors [fichero]  Transforma un fichero exportado de terminal.sexy en formato JSON a el formato de la configuración de kitty"
         echo ""
-        echo "  install-scripts-depencencies  Instala las dependecias de los scripts de python"
+        echo "  reload  Recarga la configuración de los dotfiles"
         echo ""
         echo "  os [comando]  Ejecuta un comando diseñado especificamente para el sistema operativo que se esta usando"
     ;;    
