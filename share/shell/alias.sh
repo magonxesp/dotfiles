@@ -2,7 +2,7 @@
 
 alias dotfiles="$DOTFILES_ROOT_DIRECTORY/share/scripts/dotfiles.sh"
 
-if [[ $TERM == "xterm-kitty" ]]; then
+if [[ $TERM == "xterm-ghostty" ]]; then
     alias ssh="TERM=xterm-256color ssh"
 fi
 
