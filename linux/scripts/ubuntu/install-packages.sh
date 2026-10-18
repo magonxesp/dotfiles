@@ -12,8 +12,6 @@ sudo apt install -y \
   python3 \
   python3-pip \
   imagemagick \
-  rofi \
-  fonts-powerline \
   htop \
   nodejs \
   npm \
