@@ -6,10 +6,10 @@ case $1 in
         git -C ${DOTFILES_ROOT_DIRECTORY} pull origin master
     ;;
     "reload-symlinks")
-        python3 $DOTFILES_ROOT_DIRECTORY/share/scripts/symlinks.py
+        deno run -A $DOTFILES_ROOT_DIRECTORY/share/scripts/symlinks.ts
     ;;
     "kitty-colors")
-        python3 $DOTFILES_ROOT_DIRECTORY/share/scripts/kittycolors.py ${@:2}
+        deno run --allow-read "$DOTFILES_ROOT_DIRECTORY/share/scripts/kittycolors.ts" "${@:2}"
     ;;
     "install-scripts-depencencies")
         pip3 install -r $DOTFILES_ROOT_DIRECTORY/share/scripts/requirements.txt

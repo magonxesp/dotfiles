@@ -1,0 +1,12 @@
+{
+	"imports": {
+		"yaml": "npm:yaml@2.8.1"
+	},
+	"tasks": {
+		"clean-symlinks": "deno run -A share/scripts/clean-symlinks.ts",
+		"kitty-colors": "deno run --allow-read share/scripts/kittycolors.ts",
+		"update-symlinks": "deno run -A share/scripts/symlinks.ts",
+		"check": "deno check '**/*.ts'",
+		"test": "deno test -A '**/*.test.ts'"
+	}
+}

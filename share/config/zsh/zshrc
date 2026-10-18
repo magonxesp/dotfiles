@@ -1,3 +1,5 @@
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/home/magonxesp/.zsh/completions:"* ]]; then export FPATH="/home/magonxesp/.zsh/completions:$FPATH"; fi
 #!/bin/zsh
 
 # If you come from bash you might have to change your $PATH.
@@ -102,3 +104,4 @@ source $ZSH/oh-my-zsh.sh
 
 # Dotfiles init script
 source $DOTFILES_ROOT_DIRECTORY/share/shell/init.sh
+. "/home/magonxesp/.deno/env"

@@ -1,9 +1,5 @@
 #!/bin/bash
 
-if [[ -d "$DOTFILES_ROOT_DIRECTORY/bin" ]]; then
-    export PATH=$PATH:$DOTFILES_ROOT_DIRECTORY/bin
-fi
-
 if [[ -d "$HOME/.local/bin" ]]; then
     export PATH=$PATH:$HOME/.local/bin
 fi
