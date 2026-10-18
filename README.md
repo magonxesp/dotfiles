@@ -10,25 +10,12 @@ Antes de ejecutar el script de instalacion hay que asegurarse de que en el siste
 
 Tanto para macOS y linux:
 
-* ⚠️ [python 3](https://www.python.org/downloads) (3.9 o superior)
-	* Python ya no es necesario y los scripts que hay se han deprecado a favor del nuevo programa `dotfiles` escrito en kotlin.
-	* Para poder volver a usar los scripts en python tienes que ejecutar el script `support-legacy-scripts.sh` y ejecutar a posterior el script deseado desde el comando `dotfiles-legacy` (puede que algunos scripts hayan dejado de funcionar).
+* ✅ [Deno](https://docs.deno.com/runtime/#install-deno)
 * ✅ [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
 * ✅ [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh/wiki)
 * ✅ [neofetch](https://github.com/dylanaraps/neofetch)
 * ✅ [powerline fonts](https://github.com/powerline/fonts)
 * ✅ [imagemagick](https://imagemagick.org/script/download.php)
-
-Solo en linux:
-
-* ✅ [kitty](https://github.com/kovidgoyal/kitty)
-* ✅ [GNOME](https://www.gnome.org/)
-
-Solo en macOS:
-
-* ✅ [iTerm2](https://iterm2.com/downloads.html)
-* ✅ [yabai](https://github.com/koekeishiya/yabai)
-* ✅ [skhd](https://github.com/koekeishiya/skhd)
 
 ## Instalación en Ubuntu
 
