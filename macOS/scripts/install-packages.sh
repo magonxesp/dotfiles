@@ -11,3 +11,5 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 nvm install --lts
 nvm use --lts
 nvm alias default $(node -v)
+
+curl -fsSL https://deno.land/install.sh | sh

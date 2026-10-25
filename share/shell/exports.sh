@@ -11,6 +11,7 @@ fi
 if [[ -d "$HOME/.deno" ]]; then
     export DENO_INSTALL="$HOME/.deno"
     export PATH="$DENO_INSTALL/bin:$PATH"
+	. "$HOME/.deno/env"
 fi
 
 if [[ -d "$HOME/.sdkman" ]]; then
