@@ -17,11 +17,8 @@ sudo apt install -y \
   npm \
   vim \
   fonts-font-awesome \
-  kitty
-
-sudo apt-add-repository ppa:neovim-ppa/stable -y
-sudo apt update
-sudo apt install -y neovim
+  kitty \
+  neovim
 
 curl -fsSL https://raw.githubusercontent.com/dylanaraps/pfetch/refs/heads/master/pfetch > $HOME/.local/bin/pfetch
 chmod +x $HOME/.local/bin/pfetch
